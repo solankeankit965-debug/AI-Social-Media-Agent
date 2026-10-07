@@ -22,10 +22,10 @@ export function createPost(input: CreatePostInput): Promise<SocialPost> {
   return request<SocialPost>("/posts", { method: "POST", body: JSON.stringify(input) });
 }
 
-export function approvePost(id: string, approvedBy: string): Promise<SocialPost> {
+export function approvePost(id: string, approvedBy: string, scheduledFor?: string): Promise<SocialPost> {
   return request<SocialPost>(`/posts/${id}/approve`, {
     method: "POST",
-    body: JSON.stringify({ approved_by: approvedBy }),
+    body: JSON.stringify({ approved_by: approvedBy, scheduled_for: scheduledFor }),
   });
 }
 
@@ -39,4 +39,3 @@ export function rejectPost(
     body: JSON.stringify({ rejected_by: rejectedBy, feedback }),
   });
 }
-

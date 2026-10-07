@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Orbit — AI Social Media Agent",
-  description: "Generate, review, approve, and schedule social content.",
+  title: "Aether — AI Social Media Agent",
+  description: "Turn ideas into reviewed, approved, and scheduled social content.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
