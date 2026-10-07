@@ -1,0 +1,12 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/apps/api/.venv/bin/python",
+  "python.testing.pytestArgs": ["apps/api/tests"],
+  "python.testing.pytestEnabled": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.next": true
+  }
+}
+

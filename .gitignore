@@ -1,0 +1,17 @@
+.env
+.DS_Store
+AGENTS.md
+sources/
+node_modules/
+.next/
+coverage/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite3
+*.tsbuildinfo
